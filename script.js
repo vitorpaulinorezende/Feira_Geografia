@@ -33,11 +33,11 @@ function prevContent() {
 }
 
 function nextContent() {
-	if (selectedContent < 4) {
+	if (selectedContent < 3) {
 		selectedContent++;
 		setContent(selectedContent)
 	}
-	else if (selectedContent == 4) {
+	else if (selectedContent == 3) {
 		selectedContent = 1
 		setContent(selectedContent)
 	};
