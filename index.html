@@ -7,34 +7,26 @@
     <title>Início</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="setContent(1)">
     <div class="container">
         <main class="main-container">
-            <div class="carousel-button" id="previous"></div>
-            <section class="content-container">
-                <div class="content">
+            <div class="carousel-button" id="previous" onclick="prevContent()"nc></div>
+            <section class="content-container" >
+                <div class="content" onanimationend="this.removeAttribute('id','anim')">
                     <div class="image-container">
                         <img src="./Pictures/Pictures/2 - PAPEL DE PAREDE ALFA.jpg" alt="">
                     </div>
                     <div class="text-container">
                         <h1>
-                            TÍTULO ALEATÓRIA
                         </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint o
-                            ccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint o
-                            ccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
                         </p> 
                     </div>
                 </div>
             </section>
-            <div class="carousel-button" id="next"></div>
+            <div class="carousel-button" id="next" onclick="nextContent()"></div>
         </main>
     </div>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

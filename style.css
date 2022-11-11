@@ -34,6 +34,7 @@ body {
 }
 
 .content {
+    max-height: 85vh;
     height: 100%;
     width: 100%;
     padding: 20px;
@@ -55,10 +56,12 @@ body {
 
 .text-container {
     width: 60%;
+    white-space: normal;
+    overflow: scroll;
 }
 
 .text-container h1 {
-    margin: -3px;
+    margin-bottom: -3px;
 }
 
 .carousel-button {
@@ -69,6 +72,23 @@ body {
     border-radius: 25px;
     box-shadow: -8px 8px 32px rgba(0, 0, 0, 0.6);
     border: 0.2px rgba(0,0,0, 0.3) solid;
+}
+
+#anim {
+    animation: pass 0.5s;
+}
+
+@keyframes pass {
+    0% {
+        opacity: 63%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
 }
 
 #previous {
@@ -87,6 +107,7 @@ body {
     }
     .image-container {
         width: 100%;
+        margin-bottom: 13px;
     }
     .content {
         flex-flow: column;
